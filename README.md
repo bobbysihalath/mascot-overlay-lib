@@ -157,6 +157,42 @@ onUnmounted(() => {
 </script>
 ```
 
+### Vue 2
+
+```Vue
+
+<template>
+  <div>
+    <h1>My Vue Application</h1>
+    <!-- Your content here -->
+  </div>
+</template>
+
+<script>
+import MascotOverlay from 'mascot-overlay';
+
+export default {
+  name: 'App',
+  data() {
+    return {
+      mascot: null
+    };
+  },
+  mounted() {
+    this.mascot = new MascotOverlay({
+      mascotImage: '/assets/mascot.png',
+      overlayImage: '/assets/system-details.png'
+    });
+  },
+  beforeDestroy() {
+    if (this.mascot) {
+      this.mascot.destroy();
+    }
+  }
+};
+</script>
+```
+
 ---
 
 ## ⚙️ Configuration Options
