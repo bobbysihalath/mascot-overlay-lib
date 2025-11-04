@@ -1,0 +1,45 @@
+{
+  "name": "mascot-overlay",
+  "version": "1.0.0",
+  "description": "A framework-agnostic JavaScript library for floating mascot buttons with overlay functionality",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "browser": "dist/index.js",
+  "scripts": {
+    "build": "npm run copy",
+    "copy": "cp src/index.js dist/index.js",
+    "prepare": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "mascot",
+    "overlay",
+    "javascript",
+    "vanilla-js",
+    "framework-agnostic",
+    "modal",
+    "popup",
+    "vue",
+    "react",
+    "angular"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobbysihalath/mascot-overlay-lib"
+  },
+  "bugs": {
+    "url": "https://github.com/bobbysihalath/mascot-overlay-lib/issues"
+  },
+  "homepage": "https://github.com/bobbysihalath/mascot-overlay-lib#readme",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
