@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mascot Overlay - Vanilla JS Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: white;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mascot Overlay Demo</h1>
+    <p>Hover over the mascot button in the bottom-right corner to see the overlay!</p>
+    <p>This is a simple demonstration of the Mascot Overlay library using vanilla JavaScript.</p>
+  </div>
+
+  <script src="../src/index.js"></script>
+  <script>
+    // Initialize the mascot overlay
+    const mascot = new MascotOverlay({
+      mascotImage: 'https://via.placeholder.com/140x90/4CAF50/ffffff?text=Mascot',
+      overlayImage: 'https://via.placeholder.com/800x600/2196F3/ffffff?text=System+Details',
+      overlayWidth: '800px',
+      overlayOpacity: 0.85,
+      transitionDuration: 350
+    });
+
+    console.log('Mascot Overlay initialized!');
+  </script>
+</body>
+</html>
