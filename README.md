@@ -193,6 +193,41 @@ export default {
 </script>
 ```
 
+## Angular
+
+```typescript
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import MascotOverlay from 'mascot-overlay';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <div>
+      <h1>My Angular Application</h1>
+      <!-- Your content here -->
+    </div>
+  `
+})
+export class AppComponent implements OnInit, OnDestroy {
+  private mascot: any;
+
+  ngOnInit(): void {
+    this.mascot = new MascotOverlay({
+      mascotImage: '/assets/mascot.png',
+      overlayImage: '/assets/system-details.png',
+      overlayWidth: '850px'
+    });
+  }
+
+  ngOnDestroy(): void {
+    if (this.mascot) {
+      this.mascot.destroy();
+    }
+  }
+}
+
+```
+
 ---
 
 ## ⚙️ Configuration Options
@@ -248,7 +283,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/bobbysihalath)
+- GitHub: [@bobbysihalath](https://github.com/bobbysihalath)
 - Email: bobby.3331199@gmail.com
 
 ---
