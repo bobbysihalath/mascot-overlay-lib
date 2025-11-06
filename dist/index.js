@@ -136,7 +136,7 @@ class MascotOverlay {
 
         this.mascotImg = document.createElement('img');
         this.mascotImg.className = 'mascot-overlay-img';
-        this.mascotImg.src = this.options.mascotImage;
+        this.mascotImg.src = this.options.mascotImage || 'https://poeprhkpfcrggzbqhihm.supabase.co/storage/v1/object/public/ldb/Mascot-a%20(1)%20(2).png';
         this.mascotImg.alt = 'Mascot';
 
         this.backdrop = document.createElement('div');

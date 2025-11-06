@@ -1,6 +1,6 @@
 {
   "name": "mascot-overlay",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A framework-agnostic JavaScript library for floating mascot buttons with overlay functionality",
   "main": "dist/index.js",
   "module": "src/index.js",
